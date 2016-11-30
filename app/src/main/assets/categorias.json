@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Selecciona una categoría..."
+  },
+  {
+    "nombre": "Cambio"
+  },
+  {
+    "nombre": "Colocar"
+  },
+  {
+    "nombre": "Medir"
+  },
+  {
+    "nombre": "Modificar"
+  },
+  {
+    "nombre": "Otro"
+  },
+  {
+    "nombre": "Reparacion"
+  },
+  {
+    "nombre": "Reparto"
+  },
+  {
+    "nombre": "Revision"
+  }
+
+]

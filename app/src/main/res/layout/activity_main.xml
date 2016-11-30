@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/pako_white"
             android:layout_marginRight="15dp"
-            android:padding="5dp" />
+            android:padding="7dp" />
 
 
     </android.support.v7.widget.Toolbar>

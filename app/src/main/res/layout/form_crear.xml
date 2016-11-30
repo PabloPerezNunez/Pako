@@ -1,0 +1,234 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/ic_person_white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPersonName"
+                android:hint="Nombre del cliente."
+                android:id="@+id/nombre"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_place_white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="text"
+                android:hint="Dirección del trabajo."
+                android:id="@+id/direccion"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_terrain_white" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/concejo"
+                android:layout_weight="1"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="25dp">
+        </View>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/ic_phone_white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Número de telefono"
+                android:id="@+id/telefono1"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:paddingLeft="15dp"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Otro número de telefono"
+                android:id="@+id/telefono2"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="55dp"
+                android:focusable="true"
+                android:paddingLeft="15dp"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_clock_white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPersonName"
+                android:hint="Horario de visita."
+                android:id="@+id/horario"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_star_white" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/prioridad"
+                android:layout_weight="1"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="25dp">
+        </View>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_book_white" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/categoria"
+                android:layout_weight="1"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_assignment_white" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:hint="Descripción del trabajo."
+                android:id="@+id/trabajo"
+                android:background="@drawable/back_input"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:inputType="textMultiLine" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,318 @@
+[
+  {
+    "id": "0",
+    "nombre": "Selecciona un concejo..."
+  },
+  {
+    "id": "1",
+    "nombre": "Allande"
+  },
+  {
+    "id": "2",
+    "nombre": "Aller"
+  },
+  {
+    "id": "3",
+    "nombre": "Amieva"
+  },
+  {
+    "id": "4",
+    "nombre": "Avil\u00e9s"
+  },
+  {
+    "id": "5",
+    "nombre": "Belmonte de Miranda"
+  },
+  {
+    "id": "6",
+    "nombre": "Bimenes"
+  },
+  {
+    "id": "7",
+    "nombre": "Boal"
+  },
+  {
+    "id": "8",
+    "nombre": "Cabrales"
+  },
+  {
+    "id": "9",
+    "nombre": "Cabranes"
+  },
+  {
+    "id": "10",
+    "nombre": "Candamo"
+  },
+  {
+    "id": "11",
+    "nombre": "Cangas de On\u00eds"
+  },
+  {
+    "id": "12",
+    "nombre": "Cangas del Narcea"
+  },
+  {
+    "id": "13",
+    "nombre": "Caravia"
+  },
+  {
+    "id": "14",
+    "nombre": "Carre\u00f1o"
+  },
+  {
+    "id": "15",
+    "nombre": "Caso"
+  },
+  {
+    "id": "16",
+    "nombre": "Castrill\u00f3n"
+  },
+  {
+    "id": "17",
+    "nombre": "Castropol"
+  },
+  {
+    "id": "18",
+    "nombre": "Coa\u00f1a"
+  },
+  {
+    "id": "19",
+    "nombre": "Colunga"
+  },
+  {
+    "id": "20",
+    "nombre": "Corvera de Asturias"
+  },
+  {
+    "id": "21",
+    "nombre": "Cudillero"
+  },
+  {
+    "id": "22",
+    "nombre": "Dega\u00f1a"
+  },
+  {
+    "id": "23",
+    "nombre": "El Franco"
+  },
+  {
+    "id": "24",
+    "nombre": "Gij\u00f3n"
+  },
+  {
+    "id": "25",
+    "nombre": "Goz\u00f3n"
+  },
+  {
+    "id": "26",
+    "nombre": "Grado"
+  },
+  {
+    "id": "27",
+    "nombre": "Grandas de Salime"
+  },
+  {
+    "id": "28",
+    "nombre": "Ibias"
+  },
+  {
+    "id": "29",
+    "nombre": "Illano"
+  },
+  {
+    "id": "30",
+    "nombre": "Illas"
+  },
+  {
+    "id": "31",
+    "nombre": "Langreo"
+  },
+  {
+    "id": "53",
+    "nombre": "Las Regueras"
+  },
+  {
+    "id": "32",
+    "nombre": "Laviana"
+  },
+  {
+    "id": "33",
+    "nombre": "Lena"
+  },
+  {
+    "id": "34",
+    "nombre": "Llanera"
+  },
+  {
+    "id": "35",
+    "nombre": "Llanes"
+  },
+  {
+    "id": "36",
+    "nombre": "Mieres"
+  },
+  {
+    "id": "37",
+    "nombre": "Morc\u00edn"
+  },
+  {
+    "id": "38",
+    "nombre": "Muros de Nal\u00f3n"
+  },
+  {
+    "id": "39",
+    "nombre": "Nava"
+  },
+  {
+    "id": "40",
+    "nombre": "Navia"
+  },
+  {
+    "id": "41",
+    "nombre": "Nore\u00f1a"
+  },
+  {
+    "id": "42",
+    "nombre": "On\u00eds"
+  },
+  {
+    "id": "43",
+    "nombre": "Oviedo"
+  },
+  {
+    "id": "44",
+    "nombre": "Parres"
+  },
+  {
+    "id": "45",
+    "nombre": "Pe\u00f1amellera Alta"
+  },
+  {
+    "id": "46",
+    "nombre": "Pe\u00f1amellera Baja"
+  },
+  {
+    "id": "47",
+    "nombre": "Pesoz"
+  },
+  {
+    "id": "48",
+    "nombre": "Pilo\u00f1a"
+  },
+  {
+    "id": "49",
+    "nombre": "Ponga"
+  },
+  {
+    "id": "50",
+    "nombre": "Pravia"
+  },
+  {
+    "id": "51",
+    "nombre": "Proaza"
+  },
+  {
+    "id": "52",
+    "nombre": "Quir\u00f3s"
+  },
+  {
+    "id": "54",
+    "nombre": "Ribadedeva"
+  },
+  {
+    "id": "55",
+    "nombre": "Ribadesella"
+  },
+  {
+    "id": "56",
+    "nombre": "Ribera de Arriba"
+  },
+  {
+    "id": "57",
+    "nombre": "Riosa"
+  },
+  {
+    "id": "58",
+    "nombre": "Salas"
+  },
+  {
+    "id": "59",
+    "nombre": "San Mart\u00edn de Oscos"
+  },
+  {
+    "id": "60",
+    "nombre": "San Mart\u00edn del Rey Aurelio"
+  },
+  {
+    "id": "61",
+    "nombre": "San Tirso de Abres"
+  },
+  {
+    "id": "62",
+    "nombre": "Santa Eulalia de Oscos"
+  },
+  {
+    "id": "63",
+    "nombre": "Santo Adriano"
+  },
+  {
+    "id": "64",
+    "nombre": "Sariego"
+  },
+  {
+    "id": "65",
+    "nombre": "Siero"
+  },
+  {
+    "id": "66",
+    "nombre": "Sobrescobio"
+  },
+  {
+    "id": "67",
+    "nombre": "Somiedo"
+  },
+  {
+    "id": "68",
+    "nombre": "Soto del Barco"
+  },
+  {
+    "id": "69",
+    "nombre": "Tapia de Casariego"
+  },
+  {
+    "id": "70",
+    "nombre": "Taramundi"
+  },
+  {
+    "id": "71",
+    "nombre": "Teverga"
+  },
+  {
+    "id": "72",
+    "nombre": "Tineo"
+  },
+  {
+    "id": "73",
+    "nombre": "Vald\u00e9s"
+  },
+  {
+    "id": "74",
+    "nombre": "Vegadeo"
+  },
+  {
+    "id": "75",
+    "nombre": "Villanueva de Oscos"
+  },
+  {
+    "id": "76",
+    "nombre": "Villaviciosa"
+  },
+  {
+    "id": "77",
+    "nombre": "Villay\u00f3n"
+  },
+  {
+    "id": "78",
+    "nombre": "Yernes y Tameza"
+  }
+]

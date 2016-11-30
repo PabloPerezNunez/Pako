@@ -17,4 +17,14 @@
         android:padding="40dp"
         android:layout_alignParentTop="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="PPN 2016"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#bdbdbd" />
+
 </RelativeLayout>
