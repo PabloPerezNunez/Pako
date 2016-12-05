@@ -1,36 +1,25 @@
 package es.ppn.pako.Negocio;
 
 import org.json.JSONObject;
-
-/**
- * Created by pp_1_ on 29/11/2016.
- */
 public class Trabajo {
 
-    String cliente, lugar, concejo, telefono1, telefono2,categoria, trabajo;
-    int id,prioridad;
-    boolean realizado;
+    private String cliente;
+    private String lugar;
+    private String concejo;
+    private String telefono1;
+    private String telefono2;
+    private String categoria;
+    private String trabajo;
+    private String horario;
 
-
-    public Trabajo(){
-
-    }
-
-    public Trabajo(String cliente, String lugar, String concejo,  String telefono1, String telefono2, String categoria, String trabajo, int id, int prioridad, boolean realizado) {
-        this.cliente = cliente;
-        this.lugar = lugar;
-        this.concejo = concejo;
-        this.telefono1 = telefono1;
-        this.telefono2 = telefono2;
-        this.categoria = categoria;
-        this.trabajo = trabajo;
-        this.id = id;
-        this.prioridad = prioridad;
-        this.realizado = realizado;
-    }
+    private JSONObject json;
+    private int id,prioridad;
+    private boolean realizado;
 
     public Trabajo(JSONObject item) {
         try {
+
+            this.json = item;
 
             this.cliente = item.getString("cliente");
             this.lugar = item.getString("lugar");
@@ -39,7 +28,10 @@ public class Trabajo {
             this.telefono2 = item.getString("telefono2");
             this.categoria =  item.getString("categoria");
             this.trabajo = item.getString("trabajo");
+            this.horario = item.getString("horario");
+
             this.id =  item.getInt("id");
+
             this.prioridad =  item.getInt("prioridad");
             this.realizado = item.getBoolean("realizado");
 
@@ -47,6 +39,22 @@ public class Trabajo {
 
         }
 
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
+
+    public JSONObject getJson() {
+        return json;
+    }
+
+    public void setJson(JSONObject json) {
+        this.json = json;
     }
 
     public String getCliente() {
@@ -120,4 +128,6 @@ public class Trabajo {
     public void setRealizado(boolean realizado) {
         this.realizado = realizado;
     }
+
+
 }

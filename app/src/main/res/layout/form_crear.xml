@@ -1,7 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorPrimary"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -25,7 +24,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:inputType="textPersonName"
+                android:inputType="textCapWords|textPersonName"
                 android:hint="Nombre del cliente."
                 android:id="@+id/nombre"
                 android:background="@drawable/back_input"
@@ -49,7 +48,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:inputType="text"
+                android:inputType="text|textCapSentences"
                 android:hint="Dirección del trabajo."
                 android:id="@+id/direccion"
                 android:background="@drawable/back_input"
@@ -145,7 +144,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:inputType="textPersonName"
+                android:inputType="textCapSentences|textPersonName"
                 android:hint="Horario de visita."
                 android:id="@+id/horario"
                 android:background="@drawable/back_input"
@@ -223,7 +222,7 @@
                 android:focusable="true"
                 android:paddingLeft="15dp"
                 android:layout_weight="1"
-                android:inputType="textMultiLine" />
+                android:inputType="textCapSentences|textMultiLine" />
 
 
         </LinearLayout>

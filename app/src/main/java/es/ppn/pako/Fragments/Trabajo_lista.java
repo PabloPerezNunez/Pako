@@ -1,6 +1,7 @@
 package es.ppn.pako.Fragments;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -9,34 +10,33 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.transition.AutoTransition;
+import android.transition.ChangeBounds;
+import android.transition.ChangeImageTransform;
+import android.transition.ChangeTransform;
+import android.transition.Fade;
+import android.transition.TransitionSet;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
-
+import android.widget.TextView;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
-import java.util.List;
-
 import es.ppn.pako.Adapters.TrabajosAdapter;
-import es.ppn.pako.MainActivity;
 import es.ppn.pako.Negocio.Trabajo;
 import es.ppn.pako.R;
 
-public class Trabajo_lista extends Fragment {
+import static android.R.transition.fade;
+
+public class Trabajo_lista extends Fragment implements TrabajosAdapter.onItemClick {
 
 
     private static final String TAG = "PAKOAPP";
@@ -70,7 +70,9 @@ public class Trabajo_lista extends Fragment {
             public void onClick(View v) {
 
                 Trabajo_crear f = Trabajo_crear.newInstance();
-                getFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out).replace(R.id.fragmentPlace,f,"trabajoCrear").addToBackStack(null).commit();
+                getFragmentManager().beginTransaction()
+                        .setCustomAnimations(R.anim.slide_lr_in, R.anim.slide_lr_out)
+                        .replace(R.id.fragmentPlace,f,"trabajoCrear").addToBackStack(null).commit();
 
             }
         });
@@ -115,8 +117,9 @@ public class Trabajo_lista extends Fragment {
                         }
 
                         TrabajosAdapter trabajosAdapter = new TrabajosAdapter(lTrabajos);
-
                         trabajosAdapter.notifyDataSetChanged();
+                        trabajosAdapter.setOnItemClickListener(Trabajo_lista.this);
+
 
                         listaTrabajos = (RecyclerView) vista.findViewById(R.id.listaTrabajos);
                         listaTrabajos.swapAdapter(trabajosAdapter,false);
@@ -139,7 +142,7 @@ public class Trabajo_lista extends Fragment {
                 public void onErrorResponse(VolleyError error) {
                     s.dismiss();
 
-                    final Snackbar s = Snackbar.make(mRoot, "Error de conexión", Snackbar.LENGTH_LONG);
+                    final Snackbar s = Snackbar.make(mRoot, "Error de conexión", Snackbar.LENGTH_INDEFINITE);
                     s.getView().setBackgroundColor(getResources().getColor(R.color.colorRed));
                     s.setActionTextColor(Color.BLACK);
 
@@ -162,5 +165,23 @@ public class Trabajo_lista extends Fragment {
         requestQueue.add(stringRequest);
 
     }
+
+
+    @Override
+    public void onItemClickListener(Trabajo t, View v) {
+        Trabajo_detalle f = Trabajo_detalle.newInstance(t);
+
+
+
+        TextView categoria = (TextView) v.findViewById(R.id.txtCategoria);
+        String categoria_anim_name = getResources().getString(R.string.transition_trabajo_categoria) ;
+
+        getFragmentManager().beginTransaction()
+                //.addSharedElement(categoria,categoria_anim_name)
+                .setCustomAnimations(R.anim.slide_rl_in, R.anim.slide_rl_out)
+                .replace(R.id.fragmentPlace,f,"trabajoCrear").addToBackStack(null).commit();
+
+    }
+
 
 }
